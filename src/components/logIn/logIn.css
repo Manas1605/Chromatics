@@ -1,0 +1,122 @@
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background-color: #f4f4f4;
+  }
+  
+  .login-form {
+    background-color: white;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .login-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .login-form input {
+    width: 100%;
+    padding: 10px 14px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+  }
+  
+  .login-form button {
+    width: 100%;
+    background-color: #ee801a;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .login-form button:hover {
+    background-color: #e67300;
+  }
+  
+  .login-form .error {
+    color: red;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .forgot-password {
+    text-align: right;
+    margin-bottom: 10px;
+  }
+  
+  .forgot-password span {
+    color: #007bff;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+  }
+  
+  .reset-modal {
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+  }
+  
+  .reset-modal h3 {
+    margin-bottom: 15px;
+  }
+  
+  .reset-modal input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+  }
+  
+  .reset-modal button {
+    background: #ee801a;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    margin: 5px;
+    cursor: pointer;
+  }
+  
+  .reset-modal .close-modal {
+    background: rgb(148, 144, 144);
+  }
+  .reset-modal .close-modal:hover {
+    background: rgb(107, 103, 103);
+  }
+  
+  .reset-msg {
+    color: green;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  

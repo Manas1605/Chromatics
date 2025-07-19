@@ -1,0 +1,21 @@
+  .fullscreen-btn {
+    background-color: white;
+    color: black;
+    padding: 6px 12px;
+    border: 1px dotted gray;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .fullscreen-btn:hover {
+    /* background-color: #45a049; */
+    color: #ee801a;
+    border: 1px solid #ee801a;
+
+  }
+    

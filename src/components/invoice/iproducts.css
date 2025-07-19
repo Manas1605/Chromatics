@@ -1,0 +1,70 @@
+.quotation-container {
+  /* padding: 20px; */
+  /* max-width: 900px; */
+  margin: auto;
+  font-family: sans-serif;
+}
+
+.category-block {
+  margin-bottom: 40px;
+}
+
+.quotation-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.quotation-table th,
+.quotation-table td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+}
+
+.quotation-table input {
+  width: 80px;
+  padding: 4px;
+}
+
+.category-total {
+  background-color: #f2f2f2;
+}
+
+.grand-total {
+  margin-top: 30px;
+  text-align: right;
+}
+
+.grand-total h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+
+
+.summary-section {
+  margin-top: 30px;
+  background: #f9f9f9;
+  padding: 20px;
+  border: 1px solid #ddd;
+}
+button[type="submit"] {
+background-color: #ee801a; /* Green background */
+color: white;              /* White text */
+border: none;              /* Remove default border */
+padding: 12px 24px;        /* Top-bottom and left-right padding */
+font-size: 16px;           /* Font size */
+border-radius: 4px;        /* Rounded corners */
+cursor: pointer;           /* Pointer cursor on hover */
+transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+button[type="submit"]:hover {
+background-color: #d6751b; /* Darker green on hover */
+}
+.submit:disabled {
+background-color: #ccc; /* Grey background when disabled */
+color: #666;
+cursor: not-allowed;
+}

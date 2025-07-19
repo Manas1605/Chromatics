@@ -1,0 +1,90 @@
+.main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    font-family: Roboto, sans-serif;
+    font-weight: 200;
+}
+
+.navbar {
+    background-color: #ffffff;
+    padding: 1rem;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.content {
+    padding: 2rem;
+}
+
+  /* Settings icon  */
+
+  .settings-wrapper {
+    position: relative;
+    display: inline-block;
+  }
+  .settings-icon {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #333;
+    padding: 8px;
+    transition: transform 0.3s ease;
+  }
+  
+  .settings-icon:hover {
+    transform: rotate(90deg);
+  }
+  .settings-panel {
+    position: absolute;
+    right: 0;
+    top: 70px;
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    width: 220px;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    z-index: 10;
+  }
+  
+  .settings-panel h3 {
+    margin-top: 0;
+    font-size: 16px;
+    color: #ee801a;
+  }
+  
+  .setting-option {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 12px 0;
+  }
+  
+  .setting-option select,
+  .setting-option input[type='checkbox'] {
+    cursor: pointer;
+  }
+  
+  .logout-btn {
+    background-color: #ee801a;
+    color: white;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+  
+  .logout-btn:hover {
+    background-color: #d26e00;
+  }
+  .disabled {
+    opacity: 0.5;
+    pointer-events: none;
+    user-select: none;
+  }

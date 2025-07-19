@@ -1,0 +1,430 @@
+.quotation-wrapper {
+  max-height: 600px; /* adjust height as needed */
+  overflow-y: auto;
+  overflow-x: auto;
+ 
+ }
+ .quotation-wrapper > div > .submit {
+  display: block;
+  margin-left: 28px;
+  margin-right: auto;
+}
+ .quotation-container {
+   max-width: 1200px;
+   margin: auto;
+   padding: 20px;
+   font-family: 'Arial', sans-serif;
+   /* background: #f8f8f8; */
+   border-radius: 8px;
+   box-shadow: 0 0 10px rgba(0,0,0,0.1);
+   overflow-x: auto;
+ }
+ 
+ .quotation-table {
+   width: 100%;
+   border-collapse: collapse;
+   margin-bottom: 20px;
+ }
+ .quotation-table-wrapper table{
+   min-width: 800px; /* or whatever fits your data */
+   border-collapse: collapse;
+ }
+ 
+ .tableHeadings{
+   background-color: #ee801a;
+   color: white;
+   font-size: 15px;
+ }
+ .prodPrice{
+   text-align: center;
+ }
+ .quotation-table th,
+ .quotation-table td {
+   border: 1px solid #ddd;
+   padding: 8px;
+   text-align: center;
+   
+ }
+ 
+ .quotation-table th {
+   background-color: #ee801a;
+   color: white;
+   font-size: 14px;
+ }
+ 
+ .quotation-table input {
+   width: 90%;
+   padding: 6px;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+ }
+ 
+ .add-btn,
+ .download-btn {
+   padding: 10px 20px;
+   background-color: #ee801a;
+   border: none;
+   color: white;
+   border-radius: 4px;
+   cursor: pointer;
+   margin: 8px 0;
+ }
+ 
+ .download-btn {
+   background-color: #1e90ff;
+   margin-left: 0;
+ }
+ 
+ .remove-btn {
+   background-color: red;
+   border: none;
+   color: white;
+   padding: 6px 10px;
+   cursor: pointer;
+   border-radius: 4px;
+ }
+ 
+ .summary {
+   padding-top: 10px;
+ }
+ 
+ 
+ .quotation-table-wrapper {
+   width: 100%;
+   overflow-x: unset;
+ }
+ /*  */
+ .quotation-container {
+   overflow-x: auto;
+ }
+ 
+ .quotation-table {
+   min-width: 1000px; /* Ensures the table isn't squashed on small devices */
+ }
+ .table-scroll-vertical {
+   max-height: 300px; /* adjust height as needed */
+   overflow-y: auto;
+   overflow-x: auto;
+ }
+ 
+ .table-scroll-vertical table {
+   border-collapse: collapse;
+   min-width: 1200px;
+ }
+ 
+ .prodPrice {
+   background-color: #f8f8f8;
+   position: sticky;
+   top: 0;
+   z-index: 1;
+ }
+ 
+ /* Responsive table inputs */
+ .quotation-table input {
+   width: 100%;
+   min-width: 70px;
+   font-size: 14px;
+ }
+ 
+ /* Buttons on smaller screens */
+ .add-btn,
+ .download-btn {
+   width: 20%;
+   font-size: 16px;
+   padding: 12px;
+   margin: 8px 8px;
+   transition: transform 0.2s ease, box-shadow 0.3s ease;
+   animation: bounceIn 0.5s ease-out;
+   box-shadow: 0 4px 12px rgba(148, 171, 244, 0.3);
+ }
+ 
+ .add-btn,
+ .download-btn:hover {
+   transform: translateY(-2px);
+   box-shadow: 0 6px 16px rgba(16, 68, 224, 0.21);
+ }
+ .prodPrice td {
+   padding: 10px;
+   white-space: nowrap;
+ }
+ 
+ @keyframes bounceIn {
+   0% {
+     transform: scale(0.8);
+     opacity: 0;
+   }
+   60% {
+     transform: scale(1.05);
+     opacity: 1;
+   }
+   100% {
+     transform: scale(1);
+   }
+ }
+ 
+ /* Make summary text responsive */
+ .summary p {
+   font-size: 18px;
+   font-weight: bold;
+   text-align: left;
+ }
+ 
+ 
+ 
+ /* On smaller screens, allow wrapping and scrolling */
+ @media (max-width: 768px) {
+   .quotation-wrapper{
+     max-width: 510px;
+   
+   }
+   
+   .tableHeadings th {
+     font-size: 13px;
+   }
+ 
+   .quotation-table input {
+     font-size: 12px;
+     padding: 4px;
+   }
+ 
+   .summary p {
+     font-size: 16px;
+   }
+ }
+ 
+ @media (max-width: 480px) {
+   .quotation-wrapper {
+     max-width: 200px;
+     padding: 15px;
+   }
+ 
+   .quotation-container {
+     padding: 10px;
+   }
+ 
+   .add-btn,
+   .download-btn {
+     font-size: 14px;
+   }
+ }
+ 
+ .saveTableData{
+   padding: 8px 16px;
+   background-color: #007bff;
+   color: white;
+   font-weight: bold;
+   border: none;
+   border-radius: 4px;
+   font-size: 14px;
+   cursor: pointer;
+ }
+ .saveTableData:hover{
+   background-color: #0056b3;
+ }
+ /* for second table */
+ /* for second table */
+ 
+ 
+ .add-product-button {
+   margin-bottom: 10px;
+   padding: 8px 12px;
+   background-color: #4CAF50;
+   color: white;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+ }
+ .product-table2 {
+   width: 100%;
+   border-collapse: collapse;
+ }
+ 
+ .product-table2 .product-table2_th, .product-table2_td {
+   padding: 10px;
+   border: 1px solid #ddd;
+   text-align: center;
+ }
+ .product-table2_th th{
+   background-color: #ee801a;
+   padding: 1%;
+   color: white;
+ }
+ .product-photo {
+   margin-top: 5px;
+   max-width: 50px;
+   max-height: 50px;
+   display: block;
+   object-fit: cover;
+ }
+ 
+ .product-table2_td input{
+   width: 80%;
+   padding: 6px;
+   margin: 3%;
+   box-sizing: border-box;
+ }
+ .delete-button{
+   background: none;
+   color: black;
+   border: none;
+ }
+ .photo-upload-cell {
+   vertical-align: top;
+ }
+ 
+ .photo-upload-wrapper {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 8px;
+ }
+ 
+ .file-input {
+   width: 100%;
+ }
+ 
+ .product-photo {
+   width: 180px;
+   height: 180px;
+   object-fit: cover;
+   margin: 12px;
+ }
+ 
+ /* for second table */
+ /* for second table */
+ 
+ 
+ 
+ .modal-overlay {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   z-index: 1000; /* Ensures the modal is above other elements */
+ }
+ 
+ .modal-content {
+   background-color: #fff;
+   padding: 20px 30px;
+   border-radius: 8px;
+   max-width: 500px;
+   width: 90%;
+   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+   text-align: center;
+   position: relative;
+ }
+ 
+ .modal-content h2 {
+   margin-top: 0;
+   font-size: 24px;
+ }
+ 
+ .modal-content p {
+   margin: 15px 0;
+   font-size: 18px;
+ }
+ 
+ .modal-content button {
+   margin-top: 20px;
+   padding: 10px 20px;
+   background-color: #007bff; /* Bootstrap primary color */
+   color: #fff;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+ }
+ 
+ .modal-content button:hover {
+   background-color: #0056b3; /* Darker shade on hover */
+ }
+ 
+ 
+ .submit{
+   padding: 10px 20px;
+   background-color: #ee801a;
+   border: none;
+   color: white;
+   border-radius: 4px;
+   cursor: pointer;
+   margin: 8px 0;
+ }
+ .form-horizontal {
+   max-width: 850px;
+   margin: 10px auto;
+   padding: 16px;
+   background: #fff;
+   border-radius: 6px;
+   box-shadow: 0 0 6px rgba(0, 0, 0, 0.08);
+   font-family: Arial, sans-serif;
+ }
+ 
+ .form-title {
+   font-size: 20px;
+   font-weight: bold;
+   margin-bottom: 16px;
+   text-align: center;
+ }
+ 
+ .form-row {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+   gap: 12px;
+   margin-bottom: 12px;
+ }
+ 
+ .form-group {
+   display: flex;
+   flex-direction: column;
+   gap: 4px;
+   font-size: 14px;
+ }
+ 
+ .full-width {
+   grid-column: 1 / -1;
+   margin-top: 4px;
+ }
+ 
+ input,
+ select,
+ textarea {
+   padding: 6px 8px;
+   font-size: 14px;
+   border-radius: 4px;
+   border: 1px solid #ccc;
+ }
+ 
+ textarea {
+   resize: vertical;
+   min-height: 50px;
+ }
+ 
+ .error {
+   color: red;
+   font-size: 12px;
+ }
+ 
+ .form-actions {
+   text-align: right;
+   margin-top: 10px;
+ }
+ 
+ .submit-button {
+   padding: 8px 16px;
+   background-color: #007bff;
+   color: white;
+   font-weight: bold;
+   border: none;
+   border-radius: 4px;
+   font-size: 14px;
+   cursor: pointer;
+ }
+ 
+ .submit-button:hover {
+   background-color: #0056b3;
+ }
+ 

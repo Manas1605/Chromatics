@@ -1,0 +1,144 @@
+/* QuotationComponent.css */
+
+.quotation-container {
+    max-width: 1100px;
+    max-height: 500px;
+    margin: 0 auto;
+    padding: 24px;
+    background-color: #fff;
+  }
+  
+  .heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 24px;
+    color: #333;
+  }
+  
+  .product-form {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 12px;
+    margin-bottom: 24px;
+  }
+  
+  .product-form input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .product-form button {
+    grid-column: span 5;
+    padding: 10px;
+    background-color: #ee801a; 
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .product-form button:hover {
+    background-color: #bf6a1a; 
+  }
+  
+  .table-container {
+    overflow-x: auto;
+   
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 16px;
+  }
+  
+  th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  thead {
+    background-color: #f4f4f4;
+  }
+  
+  .product-image {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+  
+  .no-image {
+    width: 50px;
+    height: 50px;
+    background-color: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    color: #777;
+    border-radius: 4px;
+  }
+  
+  .remove {
+    margin-right: 5px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .grand-total td {
+    font-weight: bold;
+    background-color: #f4f4f4;
+  }
+  
+  .right-align {
+    text-align: right;
+  }
+  
+  .left-align {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .DownloadPdfButton {
+    background-color: #ee801a; /* Vibrant orange */
+    color: white;
+    padding: 10px 20px;
+    margin-bottom: 2%;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out, transform 0.1s ease-in-out;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  }
+  
+  .DownloadPdfButton:hover {
+    background-color: #d46f17;
+    transform: translateY(-1px);
+  }
+  
+  .DownloadPdfButton:active {
+    background-color: #c26214;
+    transform: scale(0.98);
+  }
+  
+  /* client Info */
+  .client-form input,
+.client-form textarea {
+  margin: 5px;
+  padding: 8px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.client-summary {
+  background: #f4f4f4;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 8px;
+}

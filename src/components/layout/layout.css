@@ -1,0 +1,32 @@
+
+.layout {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    transition: width 0.3s;
+}
+
+.main-content {
+    transition: margin-left 0.3s, width 0.3s;
+    width: 100%;
+    padding: 1rem;
+}
+
+/* .main-content.expanded {
+    margin-left: 200px;
+    /* when sidebar is open 
+} */
+
+.main-content.full {
+    margin-left: 60px;
+    /* when sidebar is collapsed */
+}
+
+.page-content {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;  /* horizontal */
+    align-items: center;      /* vertical */
+}
